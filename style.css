@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap'); */
 *{
     box-sizing: border-box;
     font-family: 'Work Sans';
@@ -29,7 +29,7 @@ html{
 .contenedor-header header .logo a{
     font-family: 'Righteous';
     font-size: 36px;
-    color: #1CB698;
+    color: #1E90FF;
     text-decoration: none;
 }
 .contenedor-header header ul{
@@ -45,10 +45,10 @@ html{
     text-decoration: none;
 }
 .contenedor-header header nav ul li a:hover{
-    color: #1CB698;
+    color: #1E90FF;
 }
 .nav-responsive{
-    background-color: #1CB698;
+    background-color: #1E90FF;
     color:#fff;
     padding: 5px 10px;
     border-radius: 5px;
@@ -75,7 +75,7 @@ html{
 }
 .inicio .contenido-banner img{
     margin-top: 40px;
-    border: 10px solid #1CB698;
+    border: 10px solid #1E90FF;
     display: block;
     width: 300px;
     height: 280px;
@@ -105,9 +105,65 @@ html{
     font-size: 20px;
     transition: .3s;
 }
-.inicio .contenido-banner .redes a:hover{
-    background-color: #1CB698;
+/* YouTube */
+.inicio .contenido-banner .redes .youtube:hover {
+    background-color: #FF0033;  /* Fondo rojo de YouTube */
+    background-image: linear-gradient(45deg, #FF0033 25%, #FF3333 50%, #FF0033 75%);
+    background-size: 400% 400%;
+    animation: move-background-youtube 3s ease infinite;
 }
+
+/* Animación de movimiento de YouTube */
+@keyframes move-background-youtube {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* X (Twitter) */
+.inicio .contenido-banner .redes .x:hover {
+    background-color: #020202;  /* Fondo negro de X */
+    background-image: linear-gradient(45deg, #020202 25%, #333333 50%, #020202 75%);
+    background-size: 400% 400%;
+    animation: move-background-x 3s ease infinite;
+}
+
+/* Animación de movimiento de X (Twitter) */
+@keyframes move-background-x {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* LinkedIn */
+.inicio .contenido-banner .redes .linkedink:hover {
+    background-color: #0A66C2;  /* Fondo azul de LinkedIn */
+    background-image: linear-gradient(45deg, #0A66C2 25%, #1A80D0 50%, #0A66C2 75%);
+    background-size: 400% 400%;
+    animation: move-background-linkedin 3s ease infinite;
+}
+
+/* Animación de movimiento de LinkedIn */
+@keyframes move-background-linkedin {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Instagram (gradiente) */
+.inicio .contenido-banner .redes .instagram:hover {
+    background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4);
+    background-size: 400% 400%;
+    animation: move-background-instagram 3s ease infinite;
+}
+
+/* Animación de movimiento de Instagram */
+@keyframes move-background-instagram {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
 .sobremi{
     background-color: #1e2326;
     color: #fff;
@@ -130,8 +186,9 @@ html{
     margin-bottom: 20px;
 }
 .sobremi .contenido-seccion p span{
-    color: #1CB698;
+    color: #1E90FF;
     font-weight: bold;
+
 }
 .sobremi .fila{
     display: flex;
@@ -154,11 +211,12 @@ html{
 }
 .sobremi .fila .col ul li strong{
     display: inline-block;
-    color: #1CB698;
+    color: #1E90FF;
     width: 130px;
+
 }
 .sobremi .fila .col ul li span{
-    background-color: #1CB698;
+    background-color: #1E90FF;
     padding: 3px;
     font-weight: bold;
     border-radius: 5px;
@@ -185,7 +243,7 @@ html{
     font-size: .85rem;
     text-align: center;
 }.sobremi .fila .col .contenedor-intereses .interes:hover{
-    background-color: #1CB698;
+    background-color: #1E90FF;
 }
 .sobremi .fila .col .contenedor-intereses .interes i{
     font-size: 30px;
@@ -210,7 +268,7 @@ html{
     left: 0;
     width: 0;
     height: 100%;
-    background-color: #1CB698;
+    background-color: #1E90FF;
     z-index: -1;
     transition: 1s;
 }
@@ -250,6 +308,7 @@ html{
     font-weight: bold;
     display: block;
     margin-bottom: 10px;
+
 }
 .skills .skill .barra-skill{
     height: 8px;
@@ -259,7 +318,7 @@ html{
     margin-bottom: 30px;
 }
 .skills .skill .progreso{
-    background-color: #1CB698;
+    background-color: #1E90FF;
     position: absolute;
     top: 0;
     left: 0;
@@ -269,7 +328,7 @@ html{
     position: absolute;
     height: 40px;
     width: 40px;
-    background-color: #1CB698;
+    background-color: #1E90FF;
     border-radius: 50px;
     line-height: 40px;
     text-align: center;
@@ -377,6 +436,7 @@ html{
     max-width: 1100px;
     margin: auto;
 }
+
 .curriculum h2{
     font-size: 48px;
     font-family: 'Righteous';
@@ -418,30 +478,30 @@ html{
     margin-bottom: 10px;
 }
 .curriculum .fila .item .casa{
-    color: #1CB698;
+    color: #1E90FF;
     font-size: 22px;
     font-weight: bold;
     display: block;
 }
 .curriculum .fila .item .fecha{
     display: block;
-    color: #1CB698;
+    color: #1E90FF;
     margin-bottom: 10px;
 }
 .curriculum .fila .item p{
     line-height: 24px;
 }
 .curriculum .fila .izq{
-    border-right: 2px solid #1CB698;
+    border-right: 2px solid #1E90FF;
     margin-right: 20px;
 }
 .curriculum .fila .der{
-    border-left: 2px solid #1CB698;
+    border-left: 2px solid #1E90FF;
     margin-left: 20px;
 }
 .curriculum .fila .item .conectori{
     height: 2px;
-    background-color: #1CB698;
+    background-color: #1E90FF;
     width: 47px;
     position: absolute;
     top: 50%;
@@ -453,14 +513,14 @@ html{
     height: 10px;
     width: 10px;
     border-radius: 50%;
-    background-color: #1CB698;
+    background-color: #1E90FF;
     float: right;
     position: relative;
     bottom: 4px;
 }
 .curriculum .fila .item .conectord{
     height: 2px;
-    background-color: #1CB698;
+    background-color: #1E90FF;
     width: 47px;
     position: absolute;
     top: 50%;
@@ -472,7 +532,7 @@ html{
     height: 10px;
     width: 10px;
     border-radius: 50%;
-    background-color: #1CB698;
+    background-color: #1E90FF;
     float: left;
     position: relative;
     bottom: 4px;
@@ -588,7 +648,7 @@ html{
     left: 0;
     width: 0;
     height: 100%;
-    background-color: #1CB698;
+    background-color: #1E90FF;
     z-index: -1;
     transition: 1s;
 }
@@ -615,7 +675,7 @@ html{
     margin-bottom: 8px;
 }
 .contacto .col .info ul li i{
-    color: #1CB698;
+    /* color: #1E90FF; */
     display: inline-block;
     margin-right: 8px;
 }
@@ -643,11 +703,70 @@ footer .redes a{
     font-size: 20px;
     transition: .3s;
 }
+/* YouTube en el footer */
+footer .redes .youtube:hover {
+    background-color: #FF0033;  /* Fondo rojo de YouTube */
+    background-image: linear-gradient(45deg, #FF0033 25%, #FF3333 50%, #FF0033 75%);
+    background-size: 400% 400%;
+    animation: move-background-youtube 3s ease infinite;
+}
+
+/* Animación de movimiento de YouTube */
+@keyframes move-background-youtube {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* X (Twitter) en el footer */
+footer .redes .x:hover {
+    background-color: #020202;  /* Fondo negro de X */
+    background-image: linear-gradient(45deg, #020202 25%, #333333 50%, #020202 75%);
+    background-size: 400% 400%;
+    animation: move-background-x 3s ease infinite;
+}
+
+/* Animación de movimiento de X (Twitter) */
+@keyframes move-background-x {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* LinkedIn en el footer */
+footer .redes .linkedink:hover {
+    background-color: #0A66C2;  /* Fondo azul de LinkedIn */
+    background-image: linear-gradient(45deg, #0A66C2 25%, #1A80D0 50%, #0A66C2 75%);
+    background-size: 400% 400%;
+    animation: move-background-linkedin 3s ease infinite;
+}
+
+/* Animación de movimiento de LinkedIn */
+@keyframes move-background-linkedin {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Instagram en el footer */
+footer .redes .instagram:hover {
+    background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4);
+    background-size: 400% 400%;
+    animation: move-background-instagram 3s ease infinite;
+}
+
+/* Animación de movimiento de Instagram */
+@keyframes move-background-instagram {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
 footer .arriba{
     display: block;
     width: 50px;
     height: 50px;
-    background-color: #1CB698;
+    background-color: #1E90FF;
     color: #fff;
     position: absolute;
     left: 50%;
@@ -726,3 +845,20 @@ footer .arriba{
         width: 100%;
     }
 }
+.fila .col li a:hover{
+    color: #1E90FF;
+}
+.contacto .fa-location-dot {
+    color: #B94439; /* Verde */
+}
+.contacto .fa-whatsapp {
+    color: #28a745; /* Verde */
+}
+.contacto .fa-envelope {
+    color: #4584EF; /* Verde */
+}
+
+
+
+
+
